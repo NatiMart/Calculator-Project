@@ -6,12 +6,7 @@ div{
     font-weight: bold;
     font-size: larger;
 }
-div1{
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: xx-large;
-    font-stretch: ultra-expanded;
-}
+
 .container{
     background-color: rgb(231, 47, 255);
     width: 80%;
@@ -21,8 +16,8 @@ div1{
     margin-right: 10%;
     margin-left: 10%;
     flex-direction: row;
-    ;
 }
+
 .container0{
     background-color: rgb(231, 47, 255);
     width: 80%;
@@ -44,7 +39,6 @@ div1{
     margin-right: 10%;
     margin-left: 10%;
     flex-direction: row;
-    ;
 }
 
 
@@ -59,19 +53,24 @@ div1{
     display: flex; 
     justify-content: center;
     align-items: center; 
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: xx-large;
+    font-stretch: ultra-expanded;
+
 }
 
 .item1{
     display: flex; 
     justify-content: flex-end;
+    align-items: flex-end; 
     background-color: rgb(0, 255, 157);
     border-radius: 15px;
     border: 2px solid white;
     width: 85%;
     /*min-width: 200px;*/
     min-height: 70px;
-    margin: 4px;
-    align-items: flex-end;     
+    margin: 4px;        
 }
 
 .item2{
@@ -86,6 +85,11 @@ div1{
     margin: 4px;
     align-items: center;   
 }
+
+.item2:hover,.item3:hover{
+    background-color: chartreuse;
+}
+
 .item3{
     display: flex; 
     justify-content: center;
@@ -98,16 +102,15 @@ div1{
     margin: 4px;
     align-items: center; 
 }
+
 .spacer{
-    display: flex; 
-    justify-content: center;
     background-color:transparent;
     border-radius: 15px;
     border: 2px solid transparent;
     width: 15%;
     /*min-width: 200px;*/
     min-height: 60px;
-    margin: 4px    
+    margin: 4px;    
 }
 
 
