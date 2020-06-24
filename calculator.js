@@ -8,10 +8,6 @@ let currentText = "";
 
 let memoryText = '';
 
-
-
-
-
 function addAlllisteners(param) {
     for (let i = 0; i < param.length; i++) {
         if(param[i].innerHTML === "="){
@@ -47,8 +43,6 @@ function change(param) {
 
 }
 
-
-
 function add(param) {
     let nums = param.split("+");
     let sum = parseInt(nums[0])+parseInt(nums[1]);
@@ -73,6 +67,12 @@ function divide(param) {
     currentText = sum
     screen.innerHTML = currentText
 }
+function square(param) {
+    let nums = param.split("√");
+    let sum = parseInt(nums[0])^parseInt(nums[1]);
+    currentText = sum
+    screen.innerHTML = currentText
+}
 
 function equal() {
    
@@ -85,6 +85,8 @@ function equal() {
         multiply(currentText)
     } else  if(currentText.indexOf("÷")>-1){
         divide(currentText)
+    } else  if(currentText.indexOf("√")>-1){
+        square(currentText)
     }
     currentText = ''
 }
